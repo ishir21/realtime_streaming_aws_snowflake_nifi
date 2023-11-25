@@ -14,4 +14,6 @@
    
 5. A Snowflake Stream is established on the production table (customer) to capture change data, crucial for implementing a Slowly Changing Dimension (SCD-2) approach. Scheduled Snowflake tasks run at one-minute intervals, automating data movement from the staging table to both the production and historical tables.
 
-6. Automation is central to the project's efficiency. Scheduled tasks, occurring at one-minute intervals, ensure a seamless transition of data from the raw stage (customer_raw) to the production table (customer). The project incorporates Slowly Changing Dimension (SCD) methodologies, with SCD-1 (Type 1) maintaining only the latest records in the production table and SCD-2 (Type 2) capturing changes over time in the historical table (customer_historical).   
+6. Automation is central to the project's efficiency. Scheduled tasks, occurring at one-minute intervals, ensure a seamless transition of data from the raw stage (customer_raw) to the production table (customer). The project incorporates Slowly Changing Dimension (SCD) methodologies, with SCD-1 (Type 1) maintaining only the latest records in the production table and SCD-2 (Type 2) capturing changes over time in the historical table (customer_historical).
+
+### Tools Used : AWS, Docker, Snowflake, Python
